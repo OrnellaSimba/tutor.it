@@ -32,7 +32,9 @@ TUFUMA will open the next page of instructions and guide them step by step throu
 Now meet Joseline, she’s a little deaf.
 
 Hey grand daughter offer her a smartphone so they could call on WhatsApp but she doesn’t really know how to get on with it. So her granddaughter installs Titcher on the phone and explains her: 
-Granddaughter: « now when you have a problem, instead of calling me: say with google cardboard see in augmented virtuality see the different steps of building
+Granddaughter: « now when you have a problem, instead of calling me say: "Titcher, how can I put this Klingollax together?"
+
+with google cardboard she can see in augmented reality the different steps of building the furniture,
 Have a layout of the pieces
-Don’t loose a screw
+Don’t loose a screw.
 
