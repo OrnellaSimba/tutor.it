@@ -1,6 +1,6 @@
 
 # pitch script
-What do Ikea and a your Tax declaration have in common ?
+What do Ikea, a GPS device and a your Tax declaration have in common ?
 
 They are complicated, need a strict set of instructions 
 ->  A step by step guide.
