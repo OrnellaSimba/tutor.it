@@ -170,8 +170,7 @@
 $(function () {
     //init
     init();
-    //init wow effects
-    new WOW().init();
+
 
     //scroll menu
     $(window).scroll(function () {
