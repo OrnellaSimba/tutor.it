@@ -1,0 +1,34 @@
+[
+  {
+    "name": "The Boardroom",
+    "description": "Metro City",
+    "capacity": "110m²",
+    "people": "U-Shape : 25 p | Classroom : 30 p | Theater : 75 p",
+    "material": "Micro | Beamer | Audio | Screen",
+    "image": "images/room1.jpeg"
+  },
+  {
+    "name": "The Foyer",
+    "description": "Metro City",
+    "capacity": "150m²",
+    "people": "Standing : 100 p",
+    "material": "Micro | Beamer | Audio | Screen",
+    "image": "images/room2.jpeg"
+  },
+  {
+    "name": "Studio C",
+    "description": "Metro City",
+    "capacity": "75m²",
+    "people": "U-shape : 20 p | Classroom : 25 p",
+    "material": "Micro | Beamer | Audio | Screen",
+    "image": "images/room3.jpg"
+  },
+  {
+    "name": "Studio R",
+    "description": "Metro City",
+    "capacity": "45m²",
+    "people": "Conference table : 8 p",
+    "material": "Micro | Beamer | Audio | Screen",
+    "image": "images/room4.jpeg"
+  }
+]
