@@ -11,10 +11,7 @@ var step = -1;
 function getDataFromContentJson() {
     return axios.get('./content.json');
 }
-
-async
-
-function data(room) {
+async function data(room) {
     const res = await
     getDataFromContentJson(room);
     return res;
