@@ -177,7 +177,6 @@ $(function () {
         init();
     });
 
-    $(".headroom").headroom();
 
     //page scroll
     $('a.page-scroll').bind('click', function (event) {
