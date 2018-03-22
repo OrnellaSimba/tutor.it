@@ -27,21 +27,42 @@ startArtyom();
 artyom.addCommands([
     {
         description: "launch tutor",
-        indexes: ["start", "go tutor", "tutor", "hello", "hey"],
+        indexes: ["start", "tutor", "hey", "hi", "hello"],
         action: function () {
-            artyom.say(content[0].description);
+            body = document.querySelector('body');
+            body.style.backgroundColor = "white"
+        }
+    },
+    {
+        description: "get description",
+        indexes: ["description", "info"],
+        action: function () {
+            artyom.say(content[step].description);
+        }
+    }
+    ,
+    {
+        description: "launch tutor",
+        indexes: ["go tutor", "tutor", "step one", "one", "1", "first"],
+        action: function () {
+            artyom.say(content[0].title);
             title.innerHTML = content[0].title;
             mainImage.innerHTML = content[0].mainImage;
             description.innerHTML = content[0].description;
             step = 0;
+            body = document.querySelector('body');
+            body.style.backgroundColor = "white"
         }
     },
     {
         description: "Say goodbye",
-        indexes: ["bye", "bye bye", "goodbye", "see you"],
+        indexes: ["bye", "bye bye", "goodbye", "see you", 'buy'],
         action: function () {
             artyom.say("see you next time");
+            body = document.querySelector('body');
+            body.style.backgroundColor = "black"
         }
+
     },
     {
         description: "Say goodbye",
@@ -51,14 +72,14 @@ artyom.addCommands([
             if (wildcard === 'one') {
                 artyom.say(content[0].description);
                 title.innerHTML = content[0].title;
-                mainImage.innerHTML = content[0].mainImage;
+                mainImage.src = content[0].mainImage;
                 description.innerHTML = content[0].description;
                 step = 0;
             }
             else if (wildcard - 1 <= content.length - 1) {
                 artyom.say(content[wildcard - 1].description);
                 title.innerHTML = content[wildcard - 1].title;
-                mainImage.innerHTML = content[wildcard - 1].mainImage;
+                mainImage.src = content[wildcard - 1].mainImage;
                 description.innerHTML = content[wildcard - 1].description;
                 step = wildcard - 1;
             }
@@ -74,7 +95,7 @@ artyom.addCommands([
         action: function () {
             artyom.say(content[content.length - 1].description);
             title.innerHTML = content[content.length - 1].title;
-            mainImage.innerHTML = content[content.length - 1].mainImage;
+            mainImage.src = content[content.length - 1].mainImage;
             description.innerHTML = content[content.length - 1].description;
             step = content.length - 1;
         }
@@ -90,7 +111,7 @@ artyom.addCommands([
             step++;
             artyom.say(content[step].description);
             title.innerHTML = content[step].title;
-            mainImage.innerHTML = content[step].mainImage;
+            mainImage.src = content[step].mainImage;
             description.innerHTML = content[step].description;
         }
     },
@@ -103,16 +124,20 @@ artyom.addCommands([
                 return
             }
             step--;
-            artyom.say(content[step].people);
-            container.innerHTML = content[step].name + " " + content[step].people;
+            artyom.say(content[step].title);
+            title.innerHTML = content[step].title;
+            mainImage.src = content[step].mainImage;
+            description.innerHTML = content[step].description;
         }
     },
     {
         description: "to repeat",
-        indexes: ['repeat', 'again'],
+        indexes: ['repeat', 'again', "odeon"],
         action: function () {
-            artyom.say(content[step].people);
-            container.innerHTML = content[step].name + " " + content[step].people;
+            artyom.say(content[step].title);
+            title.innerHTML = content[step].title;
+            mainImage.src = content[step].mainImage;
+            description.innerHTML = content[step].description;
         }
     }
 ]);
