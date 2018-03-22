@@ -5,67 +5,56 @@
     <meta charset="utf-8">
     <title>Titcher</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/uikit/css/uikit.min.css" />
+    <link rel="stylesheet" href="../assets/uikit/css/uikit.min.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="../assets/uikit/js/uikit.min.js"></script>
     <script src="../assets/uikit/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    <div class="logo uk-align-center">
-        <img src="../assets/images/5@2x.png" alt="logo">
-    </div>
+<div class="logo uk-align-center">
+    <img class="tutorLogo" src="../assets/images/5.svg" alt="logo">
+</div>
+<span id="output" style="font-size:20px;color:dodgerblue;"></span>
 
-    <div uk-grid class="instructions">
-        <div class="uk-align-center uk-container uk-container-small">
-            <!-- IMAGE -->
-            <div uk-grid class="uk-align-center">
-                <img id="mainImage" src="" />
-                <!-- STEPS -->
-                <div class="pt2">
-                    <div class="" uk-grid>
-                        <div>
-                            <span class="js-speaking">
-                                <i class="fa fa-volume-off"></i>
-                                <!-- <i class="fa fa-volume"></i> -->
-                            </span>
-                        </div>
-                        <div>
-                            <p id="description"></p>
-                        </div>
+<div class="js-subtitleContainer">
+    <span id="js-subtitle" style="text-align: center"></span>
+</div>
+<div class="detailsStep">
+    <h3 id="js-title"></h3>
+    <img id="js-mainImage" src=""/>
+    <p id="js-description"></p>
+</div>
+<div class="intro">
+    <div>
+        <div class="logo">
+            <img class="svgAnim" src="../docs/assets/images/5.svg" alt="" height="500px" width="500px">
+        </div>
 
-
-                    </div>
-                </div>
-                <!-- ARROWS -->
-                <div uk-grid class="pt2">
-                    <div class="uk-align-center">
-                        <a href="" class="js-arrow js-arrow-left">
-                            <i class="fa fa-arrow-left pr5"></i>
-                        </a>
-                        <a href="" class="js-arrow js-arrow-right">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <span id="output" style="font-size:20px;color:dodgerblue;"></span>
-                <br>
-            </div>
+        <div class="wrap">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
     </div>
-    <div>
-        <!-- <input type="button" class="btn btn-default" onclick="startArtyom()" value="Start Tutor" />
-        <br>
-        <br>
-        <input type="button" class="btn btn-default" onclick="stopArtyom()" value="Stop listening" />
-        <br> -->
-        <span id="time" style="font-size:35px;color:green;"></span>
-        <br>
-    </div>
-    <script src="artyomis.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="app.js"></script>
+</div>
+<script src="artyomis.js"></script>
+<script src="Https://cdn.bootcss.com/typed.js/2.0.6/typed.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="app.js"></script>
 </body>
 
 </html>
