@@ -42,7 +42,7 @@ b, strong{
 }
 .sticky-navigation{
     top: 0px;
-    background-color: transparent;
+    background-color: #4C9B25;
 }
 .hero{
     height: 100vh;
@@ -59,7 +59,7 @@ b, strong{
 }
 .store-img
 {
-    width: 170px;
+    width: 110px;
 }
 .hero h1{
     font-weight: 100;
@@ -80,7 +80,7 @@ a:focus {
     text-decoration: none !important;
 }
 section{
-    padding: 80px 0px;
+    padding: 70px 0px;
 }
 .img-team{
     width: 150px;
@@ -169,12 +169,16 @@ section{
     line-height: 18px;
 }
 .icon-md {
-    font-size: 50px;
+    font-size: 80px;
     line-height: 14px;
 }
 .icon-sm {
     font-size: 30px;
     line-height: 14px;
+}
+.mt-5 {
+    display: flex;
+    justify-content: space-around;
 }
 /*===============================================
 * Colored Buttons
@@ -255,8 +259,13 @@ section{
 * Cards
 ================================================*/
 .card{
+    min-height: 250px;
     border: none;
     margin-bottom: 30px;
+}
+.card-price {
+    min-height: 500px;
+    background-color: #fff;
 }
 .card .card-block .icon-box{
     padding: 20px 0;
@@ -276,6 +285,9 @@ Pricing tables & lists
 .pricing-list{
     padding-top: 25px;
     padding-bottom: 25px;
+}
+.free-price {
+    margin-bottom: 135px;
 }
 .pricing-list li {
     font-size: 16px;
