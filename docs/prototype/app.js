@@ -106,7 +106,7 @@ artyom.redirectRecognizedTextOutput(function (text, isFinal) {
 function startArtyom() {
     artyom.initialize({
         lang: "en-US",
-        continuous: false,
+        continuous: true,
         debug: true,
         listen: true,
         speed: 1 // talk normally
