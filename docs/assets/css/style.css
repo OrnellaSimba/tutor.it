@@ -45,8 +45,7 @@ h3 {
 
 .logo {
     width: 20%;
-    padding-top: 9rem;
-    padding-bottom: 5rem;
+    padding: 1rem 0;
 }
 
 .fa {
