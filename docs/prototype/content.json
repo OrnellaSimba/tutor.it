@@ -1,20 +1,25 @@
-[
-  {
+[{
     "title": "IKEA / HELLWARE 345 : user manual 1",
-    "description": "Metro City",
-    "mainImage": "https://3dwarehouse.sketchup.com/warehouse/getpubliccontent?contentId=c5af7944-6b90-4f0b-94bd-63d11fcecaf3",
+    "description": "Step 1: Take the wooden plate number 5 and hold it vertically. On it, fix the four bed feet by turning them clockwise until it becomes too hard.",
+    "mainImage": "../assets/images/image1.jpg",
     "alt": "step1"
   },
   {
     "title": "IKEA / HELLWARE 345 : user manual step 2",
-    "description": "Metro City",
-    "mainImage": "https://3dwarehouse.sketchup.com/warehouse/getpubliccontent?contentId=c5af7944-6b90-4f0b-94bd-63d11fcecaf3",
-    "alt": "step1"
+    "description": "Step 2: place the wooden plate on its feet and fix the smaller one using the four screws from bag numbered 1.",
+    "mainImage": "../assets/images/image2.jpg",
+    "alt": "step2"
   },
   {
     "title": "IKEA / HELLWARE 345 : user manual step 3",
-    "description": "Metro City",
-    "mainImage": "https://3dwarehouse.sketchup.com/warehouse/getpubliccontent?contentId=c5af7944-6b90-4f0b-94bd-63d11fcecaf3",
-    "alt": "step1"
+    "description": "Step 3: let's attach the wooden decoration. Use the four thin wood planks. Push until you hear the POP sound.",
+    "mainImage": "../assets/images/image3.jpg",
+    "alt": "step3"
+  },
+  {
+    "title": "IKEA / HELLWARE 345 : user manual step 4",
+    "description": "Step 4: clean your mess to enjoy this beautiful bed, designed by Ragnar Logbrok for IKEA.",
+    "mainImage": "../assets/images/image3.jpg",
+    "alt": "step4"
   }
 ]
