@@ -1,7 +1,8 @@
 var container = document.querySelector('#container');
-var mainImage = document.querySelector('#mainImage');
-var title = document.querySelector('#title');
-var description = document.querySelector('#description');
+var mainImage = document.querySelector('#js-mainImage');
+var title = document.querySelector('#js-title');
+var subtitle = document.querySelector('#js-subtitle');
+var description = document.querySelector('#js-description');
 var content = [];
 var step = 0;
 
@@ -28,7 +29,18 @@ artyom.addCommands([
     {
         description: "launch tutor",
         indexes: ["start", "tutor", "hey", "hi", "hello"],
+
         action: function () {
+            subtitle.innerHTML = "";
+            var text = "Hi how can I help you ?";
+            artyom.say(text);
+            var options = {
+                strings: [text],
+                typeSpeed: 40
+            }
+
+            new Typed("#js-subtitle", options);
+
             body = document.querySelector('body');
             body.style.backgroundColor = "white"
         }
@@ -39,8 +51,7 @@ artyom.addCommands([
         action: function () {
             artyom.say(content[step].description);
         }
-    }
-    ,
+    },
     {
         description: "launch tutor",
         indexes: ["go tutor", "tutor", "step one", "one", "1", "first"],
@@ -61,6 +72,10 @@ artyom.addCommands([
             artyom.say("see you next time");
             body = document.querySelector('body');
             body.style.backgroundColor = "black"
+            title.innerHTML = "";
+            mainImage.innerHTML = "";
+            description.innerHTML = "";
+
         }
 
     },

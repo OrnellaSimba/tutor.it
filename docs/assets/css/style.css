@@ -1,9 +1,35 @@
 body {
-    /*background-image: url(../images/pc-bg.jpeg);
-    background-repeat: no-repeat;
-    background-position: top;
-    overflow-y: scroll;*/
     transition: 300ms ease-in;
+}
+
+#subtitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cursor */
+.typed-cursor {
+    opacity: 1;
+    animation: blink .7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* If fade out option is set */
+span.typed-fade-out {
+    opacity: 0;
 }
 
 .titch {
