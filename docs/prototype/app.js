@@ -1,4 +1,7 @@
 var container = document.querySelector('#container');
+var mainImage = document.querySelector('#mainImage');
+var title = document.querySelector('#title');
+var description = document.querySelector('#description');
 var content = [];
 var step = 0;
 
@@ -24,10 +27,12 @@ startArtyom();
 artyom.addCommands([
     {
         description: "launch tutor",
-        indexes: ["start", "go tutor", "tutor", "hello","hey"],
+        indexes: ["start", "go tutor", "tutor", "hello", "hey"],
         action: function () {
-            artyom.say(content[0].people);
-            container.innerHTML = content[0].name + " " + content[0].people;
+            artyom.say(content[0].description);
+            title.innerHTML = content[0].title;
+            mainImage.innerHTML = content[0].mainImage;
+            description.innerHTML = content[0].description;
             step = 0;
         }
     },
@@ -44,13 +49,17 @@ artyom.addCommands([
         indexes: ["step *"],
         action: function (i, wildcard) {
             if (wildcard === 'one') {
-                artyom.say(content[0].people);
-                container.innerHTML = content[0].name + " " + content[0].people;
+                artyom.say(content[0].description);
+                title.innerHTML = content[0].title;
+                mainImage.innerHTML = content[0].mainImage;
+                description.innerHTML = content[0].description;
                 step = 0;
             }
             else if (wildcard - 1 <= content.length - 1) {
-                artyom.say(content[wildcard - 1].people);
-                container.innerHTML = content[wildcard - 1].name + " " + content[wildcard - 1].people;
+                artyom.say(content[wildcard - 1].description);
+                title.innerHTML = content[wildcard - 1].title;
+                mainImage.innerHTML = content[wildcard - 1].mainImage;
+                description.innerHTML = content[wildcard - 1].description;
                 step = wildcard - 1;
             }
             else {
@@ -63,8 +72,10 @@ artyom.addCommands([
         description: "get Last step",
         indexes: ["last", "last step"],
         action: function () {
-            artyom.say(content[content.length - 1].people);
-            container.innerHTML = content[content.length - 1].name + " " + content[content.length - 1].people;
+            artyom.say(content[content.length - 1].description);
+            title.innerHTML = content[content.length - 1].title;
+            mainImage.innerHTML = content[content.length - 1].mainImage;
+            description.innerHTML = content[content.length - 1].description;
             step = content.length - 1;
         }
     },
@@ -77,8 +88,10 @@ artyom.addCommands([
                 return
             }
             step++;
-            artyom.say(content[step].people);
-            container.innerHTML = content[step].name + " " + content[step].people;
+            artyom.say(content[step].description);
+            title.innerHTML = content[step].title;
+            mainImage.innerHTML = content[step].mainImage;
+            description.innerHTML = content[step].description;
         }
     },
     {

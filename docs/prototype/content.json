@@ -1,34 +1,20 @@
 [
   {
-    "name": "The Boardroom",
+    "title": "IKEA / HELLWARE 345 : user manual 1",
     "description": "Metro City",
-    "capacity": "110m²",
-    "people": "U-Shape : 25 p | Classroom : 30 p | Theater : 75 p",
-    "material": "Micro | Beamer | Audio | Screen",
-    "image": "images/room1.jpeg"
+    "mainImage": "https://3dwarehouse.sketchup.com/warehouse/getpubliccontent?contentId=c5af7944-6b90-4f0b-94bd-63d11fcecaf3",
+    "alt": "step1"
   },
   {
-    "name": "The Foyer",
+    "title": "IKEA / HELLWARE 345 : user manual step 2",
     "description": "Metro City",
-    "capacity": "150m²",
-    "people": "Standing : 100 p",
-    "material": "Micro | Beamer | Audio | Screen",
-    "image": "images/room2.jpeg"
+    "mainImage": "https://3dwarehouse.sketchup.com/warehouse/getpubliccontent?contentId=c5af7944-6b90-4f0b-94bd-63d11fcecaf3",
+    "alt": "step1"
   },
   {
-    "name": "Studio C",
+    "title": "IKEA / HELLWARE 345 : user manual step 3",
     "description": "Metro City",
-    "capacity": "75m²",
-    "people": "U-shape : 20 p | Classroom : 25 p",
-    "material": "Micro | Beamer | Audio | Screen",
-    "image": "images/room3.jpg"
-  },
-  {
-    "name": "Studio R",
-    "description": "Metro City",
-    "capacity": "45m²",
-    "people": "Conference table : 8 p",
-    "material": "Micro | Beamer | Audio | Screen",
-    "image": "images/room4.jpeg"
+    "mainImage": "https://3dwarehouse.sketchup.com/warehouse/getpubliccontent?contentId=c5af7944-6b90-4f0b-94bd-63d11fcecaf3",
+    "alt": "step1"
   }
 ]
