@@ -51,7 +51,7 @@ artyom.addCommands([
         action: function () {
             artyom.say(content[0].alt);
             title.innerHTML = content[0].title;
-            mainImage.innerHTML = content[0].mainImage;
+            mainImage.src = content[0].mainImage;
             description.innerHTML = content[0].description;
             step = 0;
             body = document.querySelector('body');
