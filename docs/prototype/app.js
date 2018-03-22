@@ -3,7 +3,7 @@ var content = [];
 var step = 0;
 
 function getDataFromContentJson() {
-    return axios.get('http://localhost/docs/content.json');
+    return axios.get('./content.json');
 }
 
 async function data(room) {
@@ -12,18 +12,16 @@ async function data(room) {
 }
 
 data().then(stepArray => {
-        content = stepArray.data;
-        console.log(content);
-    }
-);
+    content = stepArray.data;
+    console.log(content);
+});
 
 //----------------------------------------//
 
 const artyom = new Artyom();
 startArtyom();
 
-artyom.addCommands([
-    {
+artyom.addCommands([{
         description: "Say goodbye",
         indexes: ["bye", "bye bye", "goodbye", "see you"],
         action: function () {
@@ -39,13 +37,11 @@ artyom.addCommands([
                 artyom.say(content[0].people);
                 container.innerHTML = content[0].name + " " + content[0].people;
                 step = 0;
-            }
-            else if (wildcard <= content.length) {
+            } else if (wildcard <= content.length) {
                 artyom.say(content[wildcard - 1].people);
                 container.innerHTML = content[wildcard - 1].name + " " + content[wildcard - 1].people;
                 step = wildcard - 1;
-            }
-            else {
+            } else {
                 artyom.say(`there is only ${content.length} steps`);
             }
         }
