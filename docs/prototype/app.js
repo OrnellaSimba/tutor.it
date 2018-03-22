@@ -2,6 +2,8 @@ var container = document.querySelector('#container');
 var mainImage = document.querySelector('#js-mainImage');
 var title = document.querySelector('#js-title');
 var subtitle = document.querySelector('#js-subtitle');
+var intro = document.querySelector('.intro');
+var logo = document.querySelector('.logo');
 var description = document.querySelector('#js-description');
 var content = [];
 var step = -1;
@@ -33,9 +35,11 @@ artyom.addCommands([
             subtitle.innerHTML = "";
             var text = "Hi how can I help you ?";
             artyom.say(text);
-
             body = document.querySelector('body');
             body.style.backgroundColor = "white"
+            intro.style.display = "none";
+            logo.style.display = "none";
+
         }
     },
     {
@@ -121,6 +125,11 @@ artyom.addCommands([
             title.innerHTML = content[step].title;
             mainImage.src = content[step].mainImage;
             description.innerHTML = content[step].description;
+            body = document.querySelector('body');
+            body.style.backgroundColor = "white"
+            intro.style.display = "none";
+            logo.style.display = "none";
+
         }
     },
     {
