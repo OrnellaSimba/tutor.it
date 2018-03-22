@@ -20,19 +20,17 @@ function data(room) {
     return res;
 }
 
-data().then(stepArray = > {
+data().then(stepArray => {
     content = stepArray.data;
-console.log(content);
-})
-;
+    console.log(content);
+});
 
 //----------------------------------------//
 
 const artyom = new Artyom();
 startArtyom();
 
-artyom.addCommands([
-    {
+artyom.addCommands([{
         description: "launch tutor",
         indexes: ["start", "tutor", "hey", "hi", "hello"],
         action: function () {
@@ -94,8 +92,7 @@ artyom.addCommands([
                 body = document.querySelector('body');
                 body.style.backgroundColor = "white"
 
-            }
-            else if (wildcard - 1 <= content.length - 1) {
+            } else if (wildcard - 1 <= content.length - 1) {
                 artyom.say(content[wildcard - 1].alt);
                 title.innerHTML = content[wildcard - 1].title;
                 mainImage.src = content[wildcard - 1].mainImage;
@@ -104,8 +101,7 @@ artyom.addCommands([
                 body = document.querySelector('body');
                 body.style.backgroundColor = "white"
 
-            }
-            else {
+            } else {
                 artyom.say(`there is only ${content.length} steps`);
             }
         }
