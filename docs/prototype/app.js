@@ -12,15 +12,19 @@ function getDataFromContentJson() {
     return axios.get('./content.json');
 }
 
-async function data(room) {
-    const res = await getDataFromContentJson(room);
+async
+
+function data(room) {
+    const res = await
+    getDataFromContentJson(room);
     return res;
 }
 
-data().then(stepArray => {
+data().then(stepArray = > {
     content = stepArray.data;
-    console.log(content);
-});
+console.log(content);
+})
+;
 
 //----------------------------------------//
 
@@ -87,6 +91,9 @@ artyom.addCommands([
                 mainImage.src = content[0].mainImage;
                 description.innerHTML = content[0].description;
                 step = 0;
+                body = document.querySelector('body');
+                body.style.backgroundColor = "white"
+
             }
             else if (wildcard - 1 <= content.length - 1) {
                 artyom.say(content[wildcard - 1].alt);
@@ -94,6 +101,9 @@ artyom.addCommands([
                 mainImage.src = content[wildcard - 1].mainImage;
                 description.innerHTML = content[wildcard - 1].description;
                 step = wildcard - 1;
+                body = document.querySelector('body');
+                body.style.backgroundColor = "white"
+
             }
             else {
                 artyom.say(`there is only ${content.length} steps`);
