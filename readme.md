@@ -1,40 +1,54 @@
 
 # pitch script
-What do Ikea, a GPS device and a your Tax declaration have in common ?
+What do Ikea, a crypto-wallet and a your Tax declaration have in common ?
+				
+They are complicated, need a strict set of instructions are prone to user’s misunderstanding. 
 
-They are complicated, need a strict set of instructions 
-->  A step by step guide.
+Until today, to solve this, Humanity has created the dreaded ... User Manual, FAQ, customer service combo.
 
-Until today, to solve this, Humanity has created the dreaded ... User Manual.
-
-And user manuals are a pain: they are complex, and often inadapted to many people and context.
-
-## no Titcher
+## User story 0 — no tutor.it
 Meet Kevin, and his dad: Jean-Pierre. 	(both wave at the audience) ..
-They bought this great Klingollax wardrobe for Kevin’s new flat. 
-									(Slide : rotating video of the wardrobe, or screen capture of the ikea website product page) 
-This is them opening the box. 			(both smiling, expecting to have their wardrobe up and standing in a few minutes.) 
+They bought this great Klingollax for Kevin’s new flat. 
+								(Slide : rotating video of the wardrobe) 
+Now, after 6 hours of work^^^^ they are exhausted, have lost a screw and have 3 metal angles left over.
 
-This is them after a few hours 			(kev+dad exhausted and desperate) . 
-They lost a screw and have 3 parts leftover.
-And this is the wardrobe (completely fucked up) 
+Meet Tutor[it]: 
+A platform where procedures are turned into conversations. 
+Voice controlled, because your hands are busy...
 
-What if we could improve this user experience using a slightly artificial intelligence ?
+## User story 1 — with tutor.it
+Now with tutor — Kevin and JP, while they are holding the pieces of the Klingollax together, can use voice command to get through their tutorial.
 
-Meet our Teacher — TUFUMA — : The User Friendly User Manual Assistant. (or UFUMA or UFUM or FUMA or FUM) FUM turns Manuals into Interactive Tutorials, that users can control via the voice. Because their hands are busy...
+(Slide with video insert of the proto site)
+« What’s the next step »,  « repeat ».
 
-## with audio assistance
-Now with TUFUMA — Kevin and jean pierre, while they are holding the pieces of the Klingollax together, can  ask TUFUMA « what’s next » 
+Tutor will indicate the next set of instructions and guide them step by step through the User Manual.
 
-TUFUMA will open the next page of instructions and guide them step by step through the User Manual.
+And don’t loose a screw.
 
-## With visual assistance
-Now meet Joseline, she’s a little deaf.
+## use cases
+* For a developper who wants to provide a good user experience to his somewhat complicated app.
+* For a freelancer who wants to key in hand customer service for their product.
+* For online education
+* For companies who want a new way to provide engaging customer service.
 
-Hey grand daughter offer her a smartphone so they could call on WhatsApp but she doesn’t really know how to get on with it. So her granddaughter installs Titcher on the phone and explains her: 
-Granddaughter: « now when you have a problem, instead of calling me say: "Titcher, how can I put this Klingollax together?"
 
-with google cardboard she can see in augmented reality the different steps of building the furniture,
-Have a layout of the pieces
-Don’t loose a screw.
+### business value
+* customer-friendly 
+* voice-controlled / smart glasses. And one day… interactive holograms!
+* cost reduction : no more call centers
+* user-friendly : upload your instructions as a video tutorial or a PDF file and you are done. (via speech-to-text recognition and OCR)
+* accurate : post-processing interface to finetune the instructions
+* evolutive: Machine learning gather user feedback to help you improve your manuals.
+* improve your customers experience from end to end
+* complete feedback for the business, have information about the usability
+* ** API system adaptable for your app.**
+
+
+* gets to know you
+
+Fréquence d’utilisation: for any technical request.
+Potentiel: how large? As it can apply to any procedure of your usage of your smartphone it could become anyone’s personal assistant. 
+
+
 
