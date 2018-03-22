@@ -21,7 +21,17 @@ data().then(stepArray => {
 const artyom = new Artyom();
 startArtyom();
 
-artyom.addCommands([{
+artyom.addCommands([
+    {
+        description: "launch tutor",
+        indexes: ["start", "go tutor", "tutor", "hello","hey"],
+        action: function () {
+            artyom.say(content[0].people);
+            container.innerHTML = content[0].name + " " + content[0].people;
+            step = 0;
+        }
+    },
+    {
         description: "Say goodbye",
         indexes: ["bye", "bye bye", "goodbye", "see you"],
         action: function () {
@@ -37,11 +47,13 @@ artyom.addCommands([{
                 artyom.say(content[0].people);
                 container.innerHTML = content[0].name + " " + content[0].people;
                 step = 0;
-            } else if (wildcard <= content.length) {
+            }
+            else if (wildcard - 1 <= content.length - 1) {
                 artyom.say(content[wildcard - 1].people);
                 container.innerHTML = content[wildcard - 1].name + " " + content[wildcard - 1].people;
                 step = wildcard - 1;
-            } else {
+            }
+            else {
                 artyom.say(`there is only ${content.length} steps`);
             }
         }
@@ -106,7 +118,7 @@ artyom.redirectRecognizedTextOutput(function (text, isFinal) {
 function startArtyom() {
     artyom.initialize({
         lang: "en-US",
-        continuous: true,
+        continuous: false,
         debug: true,
         listen: true,
         speed: 1 // talk normally
