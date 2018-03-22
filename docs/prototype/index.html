@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Titcher</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/uikit/css/uikit.min.css"/>
+    <link rel="stylesheet" href="../assets/uikit/css/uikit.min.css" />
     <script src="../assets/uikit/js/uikit.min.js"></script>
     <script src="../assets/uikit/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -31,17 +31,25 @@
                     <!-- SPEAKING ICON-->
                     <!--<img src="../assets/images/speaking.png" alt="speak" class="uk-align-center pt2"
                      style="width: 15%;">-->
+                            <span class="js-speaking">
+                                <i class="fa fa-volume-off"></i>
+                                <i class="fa fa-volume"></i>
+                            </span>
                 </div>
-            </div>
-            <!-- ARROWS -->
-            <div uk-grid class="pt2">
-                <div class="uk-align-center">
-                    <i class="fa fa-arrow-left pr5"></i>
-                    <i class="fa fa-arrow-right"></i>
+                <!-- ARROWS -->
+                <div uk-grid class="pt2">
+                    <div class="uk-align-center">
+                        <a href="" class="js-arrow js-arrow-left">
+                            <i class="fa fa-arrow-left pr5"></i>
+                        </a>
+                        <a href="" class="js-arrow js-arrow-right">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
+                <span id="output" style="font-size:20px;color:dodgerblue;"></span>
+                <br>
             </div>
-            <span id="output" style="font-size:20px;color:dodgerblue;"></span>
-            <br>
         </div>
     </div>
 </div>
