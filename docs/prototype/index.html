@@ -26,6 +26,16 @@
             <img id="js-mainImage" src=""/>
             <!-- STEPS -->
             <div uk-grid class="pt2">
+                <div class="uk-align-center">
+                    <a href="" class="js-arrow js-arrow-left">
+                        <i class="fa fa-arrow-left pr5"></i>
+                    </a>
+                    <a href="" class="js-arrow js-arrow-right">
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div uk-grid class="pt2">
                 <div class="">
                     <p id="js-description"></p>
                     <!-- SPEAKING ICON-->
@@ -37,16 +47,6 @@
                             </span>
                 </div>
                 <!-- ARROWS -->
-                <div uk-grid class="pt2">
-                    <div class="uk-align-center">
-                        <a href="" class="js-arrow js-arrow-left">
-                            <i class="fa fa-arrow-left pr5"></i>
-                        </a>
-                        <a href="" class="js-arrow js-arrow-right">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
                 <span id="output" style="font-size:20px;color:dodgerblue;"></span>
                 <br>
             </div>
@@ -54,12 +54,10 @@
     </div>
 </div>
 <div>
-    <input type="button" class="btn btn-default" onclick="startArtyom()" value="Start Tutor"/>
+   s <!--<br>-->
+    <!--<br>-->
+    <!--<input type="button" class="btn btn-default" onclick="stopArtyom()" value="Stop listening"/>-->
     <br>
-    <br>
-    <input type="button" class="btn btn-default" onclick="stopArtyom()" value="Stop listening"/>
-    <br>
-    <span id="time" style="font-size:35px;color:green;"></span>
     <br>
 </div>
 <script src="artyomis.js"></script>
